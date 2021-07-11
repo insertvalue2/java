@@ -7,14 +7,14 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-class EventEx01 extends JFrame implements ActionListener {
+class MyFrame1 extends JFrame implements ActionListener {
 
 	JButton button1;
 	JButton button2;
 	FlowLayout flowLayout;
 	// 버튼 3개 추가 !! 
 
-	public EventEx01() {
+	public MyFrame1() {
 		initData();
 		setInitLayout();
 		addEventListener();
@@ -59,10 +59,10 @@ class EventEx01 extends JFrame implements ActionListener {
 }
 
 /////////////////////////////////////////////////////////////////
-public class EventListenerMainTest {
+public class EventListenerMainTest1 {
 
 	public static void main(String[] args) {
-		new EventEx01();
+		new MyFrame1();
 
 	}
 
