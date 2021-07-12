@@ -9,7 +9,8 @@ public class Student {
 		this.name = builder.name;
 		this.grade = builder.grade;
 	}
-
+	
+	// 내부 정적 클래스 (블록 범위 틀리지 마세요)
 	public static class Builder {
 		String name;
 		int grade;

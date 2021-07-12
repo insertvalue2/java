@@ -2,7 +2,7 @@ package ex02;
 
 
 
-public class BuilderEx1 {
+public class BuilderMainTest1 {
 
 	public static void main(String[] args) {
 //		Student student1 = new Student("김학생", 3);

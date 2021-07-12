@@ -1,6 +1,7 @@
 package swing.ch02;
 
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -31,16 +32,17 @@ class MyComponents extends JFrame {
 		jLabel1 = new JLabel();
 		jTextField = new JTextField("", 20);
 		cbox1 = new JCheckBox("JCheckBox 1", true);
-		
-		jPanel1.add(button1);
-		jPanel1.add(jLabel1);
-		jPanel1.add(jTextField);
-		jPanel1.add(cbox1);
 	}
 
 	private void setInitLayout() {
 		this.setVisible(true);
 		this.add(jPanel1);
+
+		jPanel1.add(button1);
+		jPanel1.add(jLabel1);
+		jPanel1.add(jTextField);
+		jPanel1.add(cbox1);
+
 	}
 
 }
@@ -49,23 +51,16 @@ public class JPanelMainTest {
 
 	public static void main(String[] args) {
 		MyComponents mc = new MyComponents();
-		
+
 		// 글자 입력
 		System.out.println("글자를 입력하세요.");
 		Scanner sc = new Scanner(System.in);
-		// 콘솔창에서 글자 입력 
+		// 콘솔창에서 글자 입력
 		String userInput = sc.next();
-		
-		// jTextField 입력 글자 전달 
+
+		// jTextField 입력 글자 전달
 		mc.jTextField.setText(userInput);
-		
-		
+
 	}
 
 }
-
-
-
-
-
-
