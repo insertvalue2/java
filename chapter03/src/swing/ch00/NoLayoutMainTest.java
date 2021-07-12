@@ -26,7 +26,8 @@ class NoLayoutEx01 extends JFrame {
 	private void setInitLayout() {
 		// setLayout 사용 안함. 직접 위치 지정
 		this.setLayout(null);
-
+		
+		// 버튼에 크기를 직접 지정해야 나온다. 
 		button1.setSize(50, 50);
 		button2.setSize(50, 50);
 		button3.setSize(50, 50);

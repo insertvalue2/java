@@ -10,6 +10,9 @@ class FlowLayoutEx extends JFrame {
 	private JButton button2;
 	private JButton button3;
 	private JButton button4;
+	private JButton button5;
+	private JButton button6;
+	private JButton button7;
 	private FlowLayout flowLayout;
 
 	public FlowLayoutEx() {
@@ -20,12 +23,15 @@ class FlowLayoutEx extends JFrame {
 	private void initData() {
 		this.setTitle("Flow Layout");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(400, 400);
-		flowLayout = new FlowLayout(FlowLayout.CENTER, 10, 100);
+		this.setSize(300, 300);
+		flowLayout = new FlowLayout(FlowLayout.CENTER, 10, 10);
 		button1 = new JButton("1");
 		button2 = new JButton("2");
 		button3 = new JButton("3");
 		button4 = new JButton("4");
+		button5 = new JButton("5");
+		button6 = new JButton("6");
+		button7 = new JButton("7");
 	}
 
 	public void setInitLayout() {
@@ -35,6 +41,9 @@ class FlowLayoutEx extends JFrame {
 		this.add(button2);
 		this.add(button3);
 		this.add(button4);
+		this.add(button5);
+		this.add(button6);
+		this.add(button7);
 	}
 }
 
