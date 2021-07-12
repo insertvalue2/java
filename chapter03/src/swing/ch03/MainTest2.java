@@ -10,6 +10,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import ex03.MyLogger;
+
 class MyFrame2 extends JFrame {
 	
 	BufferedImage backgroundImage; 
@@ -29,9 +31,12 @@ class MyFrame2 extends JFrame {
 		
 		try {
 			backgroundImage = ImageIO.read(new File("background1.jpg"));
-			imageIcon = ImageIO.read(new File("among1.png"));
+			imageIcon = ImageIO.read(new File("among11.png"));
 		} catch (IOException e) {
+			MyLogger logger = MyLogger.getLogger();
+			logger.warning(this + "" + e.toString());
 			System.out.println("파일이 없습니다.");
+			
 			System.exit(0);
 		} 
 		

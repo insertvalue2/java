@@ -59,7 +59,7 @@ class MyFrame1 extends JFrame implements ActionListener {
 }
 
 /////////////////////////////////////////////////////////////////
-public class EventListenerMainTest1 {
+public class MainTest1 {
 
 	public static void main(String[] args) {
 		new MyFrame1();

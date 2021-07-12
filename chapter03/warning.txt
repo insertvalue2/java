@@ -1,0 +1,10 @@
+7월 13, 2021 2:37:01 오전 ex03.MyLogger warning
+WARNING: log Test
+7월 13, 2021 2:39:04 오전 ex03.MyLogger warning
+WARNING: log Test 123123
+7월 13, 2021 2:41:22 오전 ex03.MyLogger warning
+WARNING: javax.imageio.IIOException: Can't read input file!
+7월 13, 2021 2:43:12 오전 ex03.MyLogger warning
+WARNING: javax.imageio.IIOException: Can't read input file!
+7월 13, 2021 2:44:55 오전 ex03.MyLogger warning
+WARNING: swing.ch03.MyFrame2[frame0,0,0,500x500,invalid,hidden,layout=java.awt.BorderLayout,title=이미지 백그라운드 연습,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]javax.imageio.IIOException: Can't read input file!

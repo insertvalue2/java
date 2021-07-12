@@ -22,7 +22,7 @@ class MyFrame2 extends JFrame {
 		setTitle("이벤트 리스너 연습 2");
 		setSize(500, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		button1 = new JButton("(내부 클래스 타입)이벤트 리스너 2 ");
+		button1 = new JButton("button");
 	}
 
 	private void setInitLayout() {
@@ -30,16 +30,9 @@ class MyFrame2 extends JFrame {
 		setLayout(new FlowLayout());
 		this.add(button1);
 	}
-
-	private void addEventListener() {
-//		button1.addActionListener(new MyButtenListener());
-		button1.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				System.out.println("가나다라마바사");
-				
-			}
-		});
+	// private -> protected 변경 (MyFrame3 사용)
+	protected void addEventListener() {
+		button1.addActionListener(new MyButtenListener());
 	}
 	
 	private class MyButtenListener implements ActionListener {
@@ -51,11 +44,7 @@ class MyFrame2 extends JFrame {
 	}
 }
 
-interface A {
-	public abstract void a(String a);
-}
-
-public class EventListenerMainTest2 {
+public class MainTest2 {
 	public static void main(String[] args) {
 		new MyFrame2();
 	}
