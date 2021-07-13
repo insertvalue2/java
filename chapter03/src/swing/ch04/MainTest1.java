@@ -47,13 +47,15 @@ class MyFrame1 extends JFrame implements ActionListener {
 		System.out.println("Action 이 일어나면 여기 메서드에서 동작 !!! ");
 		JButton clickedButton = (JButton) e.getSource();
 		
+//		System.out.println(clickedButton.getText());
+//		clickedButton.setText("클릭 되었습니다.");
+		
 		if(clickedButton.getText().equals(button1.getText())) {
 			System.out.println("1번 버튼이 클릭 되었습니다.");
 		} else {
 			System.out.println("2번 버튼이 클릭 되었습니다.");
 		}
-//		System.out.println(clickedButton.getText());
-//		clickedButton.setText("클릭 되었습니다.");
+
 	}
 
 }
@@ -63,7 +65,7 @@ public class MainTest1 {
 
 	public static void main(String[] args) {
 		new MyFrame1();
-
+		
 	}
 
 }

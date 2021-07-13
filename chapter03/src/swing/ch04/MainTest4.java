@@ -37,30 +37,32 @@ class MyFrame4 extends JFrame {
 	private void addEventListener() {
 		container.addMouseListener(new MouseListener() {
 			
+			// 마우스가 떨어졌을 때 실행되는 메서드 
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				// TODO Auto-generated method stub
 				
 			}
-			
+			// 마우스가 눌러 졌을때 실행되는 메서드
 			@Override
 			public void mousePressed(MouseEvent e) {
 				// TODO Auto-generated method stub
 				
 			}
-			
+			// 마우스가 나갔을때 실행되는 메서드 
 			@Override
 			public void mouseExited(MouseEvent e) {
 				// TODO Auto-generated method stub
 				
 			}
-			
+			// 마우스가 들어 왔을때 실행되는 메서드 
 			@Override
 			public void mouseEntered(MouseEvent e) {
 				// TODO Auto-generated method stub
 				
 			}
 			
+			// 마우스가 클릭되었을때 실행되느 메서드 
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				System.out.println(e.getX() + " : x 좌표 값");
