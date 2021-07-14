@@ -18,6 +18,7 @@ class MyFrame2 extends JFrame {
 	BufferedImage imageIcon; 
 	MyImagePanel myImagePanel; 
 	JButton button1;
+
 	
 	public MyFrame2() {
 		initData();
@@ -31,7 +32,7 @@ class MyFrame2 extends JFrame {
 		
 		try {
 			backgroundImage = ImageIO.read(new File("background1.jpg"));
-			imageIcon = ImageIO.read(new File("among11.png"));
+			imageIcon = ImageIO.read(new File("among1.png"));
 		} catch (IOException e) {
 			MyLogger logger = MyLogger.getLogger();
 			logger.warning(this + "" + e.toString());
