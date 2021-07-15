@@ -73,14 +73,10 @@ class MyFrame7 extends JFrame implements KeyListener  {
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-	
-	}
-
-	@Override
-	public void keyReleased(KeyEvent e) {
 		int keyCode = e.getKeyCode();
 		if (keyCode == KeyEvent.VK_UP) {
 			//yPoint = (yPoint < 0) ? 0 :  yPoint - 10; 
+			yPoint -= 10;
 		} else if (keyCode == KeyEvent.VK_DOWN) {
 			yPoint += 10;
 		} else if (keyCode == KeyEvent.VK_LEFT) {
@@ -89,6 +85,10 @@ class MyFrame7 extends JFrame implements KeyListener  {
 			xPoint += 10; 
 		}
 		repaint();
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
 		
 	}
 	

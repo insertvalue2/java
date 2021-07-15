@@ -31,11 +31,11 @@ class MyFrame4 extends JFrame {
 		setVisible(true);
 		setLayout(null);
 		add(label);
-		label.setLocation(100, 100);
+		label.setLocation(12, 39);
 	}
 	
 	private void addEventListener() {
-		container.addMouseListener(new MouseListener() {
+		this.addMouseListener(new MouseListener() {
 			
 			// 마우스가 떨어졌을 때 실행되는 메서드 
 			@Override
