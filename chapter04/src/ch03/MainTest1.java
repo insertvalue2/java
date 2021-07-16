@@ -1,12 +1,13 @@
 package ch03;
 
-// Shared ReSource
+// Shared ReSource 상태가 되었을 때 
 class Bank {
 
 	int money = 10000;
-	
+
 	public int getMoney() {
 		return money;
+
 	}
 
 	public void setMoney(int money) {

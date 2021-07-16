@@ -20,11 +20,9 @@ class MiniAmongUs extends JFrame {
 	
 	int among1XPoint = 0;
 	int among1YPoint = 370;
-	
 	int among2XPoint = 200;
 	int among2YPoint = 200;
 	
-
 	public MiniAmongUs() {
 		initData();
 		setInitLayout();
