@@ -12,6 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+// 약속 (규약) 
 interface MyCallBack {
 	public void add();
 
