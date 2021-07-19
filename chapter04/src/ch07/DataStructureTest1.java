@@ -52,6 +52,7 @@ public class DataStructureTest1 {
 		}
 		
 		// while 사용방법 
+		// 요소 순회 (반복자) 컬렉션 프레임워크에 저장된 요소들을 하나씩 차례로 참조하는것
 		Iterator<Integer>  iter = list.iterator(); 
 		// true , false 
 		while(iter.hasNext()) {

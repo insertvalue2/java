@@ -7,12 +7,14 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import com.google.gson.Gson;
+
 public class HttpMainTest {
 
 	public static void main(String[] args) {
 
 		try {
-			URL url = new URL("https://jsonplaceholder.typicode.com/todos/1");
+			URL url = new URL("https://jsonplaceholder.typicode.com/todos/10");
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
 			connection.setRequestMethod("GET");
@@ -28,6 +30,19 @@ public class HttpMainTest {
 				}
 			}
 			System.out.println(sb.toString());
+			// 변수에 담기 
+			String str = sb.toString(); 
+			
+			Gson gson = new Gson();
+			Todo todo = gson.fromJson(str, Todo.class);
+			
+			System.out.println(todo.userId);
+			System.out.println(todo.id);
+			System.out.println(todo.title);
+			System.out.println(todo.completed);
+
+			
+			
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

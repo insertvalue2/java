@@ -28,7 +28,7 @@ class MyPanel extends JPanel implements ActionListener {
 	MyCallBack myCallBack;
 
 
-	//콜리 :  콜백 받는 객체의 주소값을 알고 있어야 메서드가 호출 되었다고 알릴 수 있다. 
+	//콜리(호출자) :  콜백 받는 객체의 주소값을 알고 있어야 메서드가 호출 되었다고 알릴 수 있다. 
 	public MyPanel(MyCallBack myCallBack) {
 		this.myCallBack = myCallBack;
 		addBtn = new JButton("더하기 버튼");
@@ -48,7 +48,7 @@ class MyPanel extends JPanel implements ActionListener {
 		JButton button = (JButton) e.getSource();
 		if (button.getText().equals(addBtn.getText())) {
 			// add  메서드가 실행  
-			myCallBack.add();
+			myCallBack.add( );
 		} else {
 			myCallBack.minus();
 //			myCallBack.check(true);
