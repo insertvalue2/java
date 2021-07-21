@@ -7,7 +7,6 @@ public class HelloJava {
 		//  < -- 주석 이라고 합니다
 		// 화면에 문자열을 출력 하자. 
 		System.out.println("Hello Java");
-		
 		System.out.println("안녕하세요");
 		System.out.println();
 		System.out.print("반갑습니다.");

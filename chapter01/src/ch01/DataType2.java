@@ -5,13 +5,13 @@ public class DataType2 {
 	public static void main(String[] args) {
 		
 		// 기본 자료형 
-		// 문자 타자형 
+		// 문자 자료형 
 		char name;  // 2바이트 공간에 문자를 담을 수 있는 변수 입니다. (name)
 		char a; 
 		char initial;
 		
 		// 값을 초기화 하는 방법 (넣는 방법) 
-		name = 'A'; // 혿따옴표를 사용하고 단 한글자만 변수에 저장할 수 있다. 
+		name = 'A'; // 홑 따옴표를 사용하고 하나의 글자만 변수에 저장할 수 있다. 
 		//name = 'AB'; <- 하나 이상에 문자는 저장할 수 없다 (문자열 String을 사용한다.) 
 		a = 'B';
 		initial = 'C';

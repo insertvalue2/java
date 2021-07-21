@@ -34,7 +34,7 @@ class MiniAmongUs extends JFrame {
 
 	private void initData() {
 		setTitle("이미지 백그라운드 연습");
-		setSize(500, 500);
+		setSize(600, 600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		try {
@@ -83,7 +83,7 @@ class MiniAmongUs extends JFrame {
 		@Override
 		protected void paintComponent(Graphics g) {
 			super.paintComponent(g);
-			g.drawImage(backgroundImage, 0, 0, 500, 500, null);
+			g.drawImage(backgroundImage, 0, 0, 600, 600, null);
 			g.drawImage(amongImage1, among1XPoint, among1YPoint, 100, 100, null);
 			g.drawImage(amongImage2, among2XPoint, among2YPoint, 100, 100, null);
 		}
