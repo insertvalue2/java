@@ -24,7 +24,9 @@ public class IfMainTest2 {
 			System.out.println("잘못된 입력이 있습니다.");
 		}
 		
-		System.out.println("당신에 학점은 : " + result + " 입니다.");
+		if(result != 'Z') {
+			System.out.println("당신에 학점은 : " + result + " 입니다.");
+		}
 
 	} // end of main 
 
