@@ -3,7 +3,7 @@ package ch02;
 public class ConstantTest {
 
 	public static void main(String[] args) {
-		// 상수(constant) 선언하기 
+		// 상수(constant)  
 		
 		final int  MAX_NUM = 12;// 상수를 선언과 초기화를 동시에  
 		final int MIN_NUM; // 상수 선언 
