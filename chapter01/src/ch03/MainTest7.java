@@ -29,15 +29,15 @@ public class MainTest7 {
 		// num2 = num2 - 10;
 		System.out.println(num2);
 
-		System.out.println("===========");
-		num1 *= 2;
-		System.out.println(num1);
-		System.out.println("===========");
-		num2 /= 2;
-		System.out.println(num2);
-		System.out.println("===========");
-		num2 %= 2;
-		System.out.println(num2);
+//		System.out.println("===========");
+//		num1 *= 2;
+//		System.out.println(num1);
+//		System.out.println("===========");
+//		num2 /= 2;
+//		System.out.println(num2);
+//		System.out.println("===========");
+//		num2 %= 2;
+//		System.out.println(num2);
 	}
 
 }

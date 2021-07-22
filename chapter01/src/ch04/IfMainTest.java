@@ -5,7 +5,11 @@ import java.util.Scanner;
 public class IfMainTest {
 
 	public static void main(String[] args) {
-
+		
+		// 제어문 if 
+		// 주어진 조건에 따라서 실행이 이루어 지도록 구현 
+		// 만약 ... 이라면 
+		
 		boolean flag = true;
 
 		// if 문 단독
