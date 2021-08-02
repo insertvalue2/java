@@ -2,7 +2,7 @@ package ch02;
 
 public class Warrior extends Hero {
 
-	int 
+	
 	public Warrior(String name, int hp) {
 		super(name, hp);
 	}

@@ -30,8 +30,8 @@ class Cal2 extends Cal {
 		if (n1 == 0 || n2 == 0) {
 			System.out.println("0을 입력하지 마시오");
 		}
-//		return n1 * n2 / 2 + 3 + 12 + 10 / 3;
-		return super.multiply(n1, n2);
+		//return super.multiply(n1, n2);
+		return n1 * n2; 
 	}
 
 }
