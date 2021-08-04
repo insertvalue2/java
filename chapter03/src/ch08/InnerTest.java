@@ -22,9 +22,7 @@ class OutClass {
 			// inNum += 10; // 내부 클래스의 인스턴스 변수는 사용할 수 없음
 			System.out.println("OutClass sNum = " + sNum + "(외부 클래스의 스태틱 변수 사용)");
 			System.out.println("InStaticClass sInNum = " + sInNum + "(내부 클래스의 스태틱 변수 사용)");
-
 		}
-
 	}
 
 }// end of OutClass
