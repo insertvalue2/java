@@ -9,5 +9,7 @@ public class Archer extends Hero {
 	public void fireArrow() {
 		System.out.println("궁수 불화살 공격");
 	}
+	
+	
 
 }
