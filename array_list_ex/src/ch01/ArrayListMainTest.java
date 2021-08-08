@@ -16,10 +16,12 @@ public class ArrayListMainTest {
 		// ArrayList 선언 
 		// 사용방법 
 		
-		// 선언방법 
+		// 데이터를 담을 공간 만들기
+		// ! ArrayList 배열과 달리 공간에 크기를 먼저 선언할 필요가 없다. 
 		ArrayList<Book> shoppingCart = new ArrayList<Book>(); 
 		
-		// 값 넣기 3개만 넣어 봅시다. 
+		// 추가 방법 1 
+		// 데이터 추가하기(값 넣기) 3개만 넣어 봅시다. 
 		shoppingCart.add(book1); 
 		shoppingCart.add(book2); 
 		shoppingCart.add(book3);
@@ -29,7 +31,8 @@ public class ArrayListMainTest {
 			shoppingCart.get(i).showInfo();
 		}
 		
-		// shoppingCart 에 데이터를 추가 단. 엘리먼트를 제일 먼저 출력할 수 있도록 
+		// 추가 방법 2 
+		// shoppingCart 에 데이터를 추가 단. 엘리먼트를 제일 먼저 출력할 수 있도록(index 0번째)  
 		shoppingCart.add(0, book5);
 		
 		System.out.println("----------------------");
