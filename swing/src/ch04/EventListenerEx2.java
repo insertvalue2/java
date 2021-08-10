@@ -1,5 +1,4 @@
-package swing.ch04;
-
+package ch04;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,14 +6,14 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-class MyFrame1 extends JFrame implements ActionListener {
+class MyFrame2 extends JFrame implements ActionListener {
 
 	JButton button1;
 	JButton button2;
 	FlowLayout flowLayout;
-	// 버튼 3개 추가 !! 
+	//문제 1.  버튼 3개 추가 !! 
 
-	public MyFrame1() {
+	public MyFrame2() {
 		initData();
 		setInitLayout();
 		addEventListener();
@@ -58,12 +57,11 @@ class MyFrame1 extends JFrame implements ActionListener {
 	}
 }
 
-/////////////////////////////////////////////////////////////////
-public class MainTest1 {
 
+
+
+public class EventListenerEx2 {
 	public static void main(String[] args) {
-		new MyFrame1();
-		
+		new MyFrame2(); 
 	}
-
 }

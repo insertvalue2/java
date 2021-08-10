@@ -1,4 +1,4 @@
-package swing.ch04;
+package ch04;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -7,11 +7,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-class MyFrame0 extends JFrame implements ActionListener {
+class MyFrame1 extends JFrame implements ActionListener {
 	
 	JButton button; 
 	
-	public MyFrame0() {
+	public MyFrame1() {
 		initData();
 		setInitLayout();
 		addEventListener();
@@ -27,6 +27,7 @@ class MyFrame0 extends JFrame implements ActionListener {
 		setLayout(new FlowLayout());
 		add(button);
 	}
+	
 	private void addEventListener() {
 		button.addActionListener(this);
 	}
@@ -39,9 +40,9 @@ class MyFrame0 extends JFrame implements ActionListener {
 	}
 }
 
-//////////////////////////////////////////////////////////
-public class MainTest0 {
+
+public class EventListenerEx1 {
 	public static void main(String[] args) {
-		new MyFrame0();
+		new MyFrame1(); 
 	}
 }
