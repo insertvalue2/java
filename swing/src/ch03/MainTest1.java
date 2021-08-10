@@ -14,7 +14,7 @@ class ImagePanel extends JPanel {
 	private Image image;
 	
 	public ImagePanel() {
-		image = new ImageIcon("image5.jpg").getImage();
+		image = new ImageIcon("image1.jpg").getImage();
 	}
 
 	@Override
