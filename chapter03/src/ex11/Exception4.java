@@ -14,6 +14,7 @@ public class Exception4 {
 		Logger logger = Logger.getLogger("myLogger");
 		
 		Student student = null;
+		student.name = "111";
 		
 		try {
 			student.name = "111";

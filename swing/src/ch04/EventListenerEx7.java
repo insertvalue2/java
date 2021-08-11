@@ -1,4 +1,4 @@
-package swing.ch04;
+package ch04;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -7,10 +7,10 @@ import java.awt.event.KeyListener;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
-class MyFrame6 extends JFrame implements KeyListener {
+class MyFrame7 extends JFrame implements KeyListener {
 	
 	private JTextArea area;
-	public MyFrame6() {
+	public MyFrame7() {
 		initData();
 		setInitLayout();
 		addEventListener();
@@ -67,18 +67,11 @@ class MyFrame6 extends JFrame implements KeyListener {
 	@Override
 	public void keyReleased(KeyEvent e) {
 		// TODO Auto-generated method stub
-		
 	}
-	
 }
 
-
-//////////////////////////////////////
-public class MainTest6 {
-
+public class EventListenerEx7 {
 	public static void main(String[] args) {
-		new MyFrame6();
-
+		new MyFrame7(); 
 	}
-
 }

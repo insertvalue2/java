@@ -48,6 +48,8 @@ public class EventListenerEx4 {
 		// 메모리 공간(동적 메모리)에 객체가 생성되고 인스턴스 변수가 없기 때문에 
 		// 한번만 사용할 수 있다. 
 		new MyFrame4();
+		new MyFrame4();
+		new MyFrame4();
 		
 		
 	}
