@@ -17,31 +17,38 @@ class Bank {
 	// 1. synchronized 메서드 방법
 	// 2. synchronized 블록 방법
 	public void saveMoney(int money) {
-		int m = getMoney();
-		try {
-			System.out.println(Thread.currentThread());
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		synchronized (this) {
+			
+			int m = getMoney();
+			try {
+				System.out.println(Thread.currentThread());
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			setMoney(m + money);
+			System.out.println("입금 후 계좌 잔고 : " + getMoney());
 		}
-		setMoney(m + money);
-		System.out.println("입금 후 계좌 잔고 : " + getMoney());
+		
 	}
 
 	public void minusMoney(int money) {
-		int m = getMoney();
+		synchronized (this) {
+			int m = getMoney();
+			
+			try {
+				System.out.println(Thread.currentThread());
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 
-		try {
-			System.out.println(Thread.currentThread());
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			setMoney(m - money);
+			System.out.println("출금 후 계좌 잔고 : " + getMoney());
 		}
-
-		setMoney(m - money);
-		System.out.println("출금 후 계좌 잔고 : " + getMoney());
+		
 	}
 }
 
@@ -85,7 +92,6 @@ public class MainTest1 {
 		mother.start();
 
 		for (int i = 0; i < 100; i++) {
-
 			System.out.print("-");
 			try {
 				Thread.sleep(100);

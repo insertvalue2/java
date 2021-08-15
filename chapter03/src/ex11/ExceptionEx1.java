@@ -6,6 +6,10 @@ public class ExceptionEx1 {
 	
 		int[] arr = { 1,  2,  3, 4,  5 };
 
+//		for (int i = 0; i < 10; i++) {
+//			System.out.println(arr[i]);
+//		}
+		
 		try {
 			for (int i = 0; i < 10; i++) {
 				System.out.println(arr[i]);

@@ -8,6 +8,8 @@ public class ExceptionEx2 {
 
 		FileInputStream fis;
 		
+		//fis = new FileInputStream("a.txt");
+		
 		try {
 			fis = new FileInputStream("a.txt");
 		} catch (FileNotFoundException e) {

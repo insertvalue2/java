@@ -12,7 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 class MiniAmongUs extends JFrame {
-
+	
 	BufferedImage backgroundImage;
 	BufferedImage amongImage1;
 	BufferedImage amongImage2;
@@ -92,7 +92,6 @@ class MiniAmongUs extends JFrame {
 		public void run() {
 			boolean direcation = true;
 			while (true) {
-				
 				if (direcation) {
 					among1XPoint = among1XPoint + 10;
 				} else {
