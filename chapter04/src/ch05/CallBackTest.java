@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 // 약속 (규약) 
 interface MyCallBack {
 	public void add();
-
+	
 	public void minus();
 
 //	public void check(Boolean ck);
