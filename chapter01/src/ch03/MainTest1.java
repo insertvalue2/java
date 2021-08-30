@@ -16,8 +16,10 @@ public class MainTest1 {
 		System.out.println(number2);
 		
 		System.out.println("=============");
+		
 		// 부호 연산자 ( + , - )
 		System.out.println(-number);
+		
 		// 부호를 변경하는 연산자 입니다. 
 		// 단 변수에 들어 있는 실제 값을 변경한 상태는 아닙니다. 
 		System.out.println(number);
