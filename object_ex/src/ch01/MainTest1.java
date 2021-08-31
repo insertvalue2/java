@@ -4,13 +4,22 @@ public class MainTest1 {
 
 	// 메인함수
 	public static void main(String[] args) {
-		Book book1 = new Book(1, "데미안", "헤르만 헤세");
-		Book book2 = new Book(2, "데미안", "헤르만 헤세");
+		Book book1 = new Book(1, "플러터UI실전", "김근호");
+		Book book2 = new Book(2, "플러터UI실전", "김근호");
 
+		System.out.println(book1);   
+		
+		String str = new String("test");
+		System.out.println(str);
+		System.out.println(str.toString());
+		
+		
 		//최상위 object 클래스의 toString 메서드 재정의 이후
 		System.out.println(book1);
 		System.out.println(book1.hashCode());
 		System.out.println("-------------------------");
+		
+		// equals 메서드 재정의 하기 
 		
 		// == 주소 값만을 비교 한다.
 		// 물리적 객체 비교 

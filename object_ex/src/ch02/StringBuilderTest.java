@@ -1,4 +1,4 @@
-package ch08;
+package ch02;
 
 public class StringBuilderTest {
 
