@@ -2,11 +2,11 @@ package ch01;
 
 import javax.swing.JFrame;
 
+// Runnable 인터페이스 구현하여 만들기
 class MyRunnable1 extends JFrame implements Runnable {
 
 	@Override
 	public void run() {
-		
 		for(int i = 0; i < 200; i++) {
 			System.out.print(i + "\t" );
 		}
