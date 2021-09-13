@@ -1,0 +1,24 @@
+package ch05;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class InputStreamReaderTest {
+
+	public static void main(String[] args) {
+
+		try (FileInputStream fi = new FileInputStream("assets/reader.txt")) {
+//		try (InputStreamReader isr = new InputStreamReader(new FileInputStream("reader.txt"))) {
+			int i;
+			while ((i =  fi.read()) != -1) { // 보조 스트림으로 읽습니다.
+//			while ((i = isr.read()) != -1) { // 보조 스트림으로 읽습니다.
+				System.out.print((char) i);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
