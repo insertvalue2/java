@@ -1,6 +1,6 @@
-package ch08;
+package ch01;
 
-// DAO  
+// Bean 객체 
 public class Todo {
 	int userId; 
 	int id; 

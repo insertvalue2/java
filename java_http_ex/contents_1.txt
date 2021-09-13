@@ -1,7 +1,6 @@
 
 
 
-
 JSON 이란 
 
 JSON(javaScript Object Notation)의 약자로 JavaScript에서 객체를 만들때 
@@ -27,8 +26,3 @@ why
 JAR (Java ARchive Files)
  - 일종의 자바 프로젝트 압축 파일
  - ZIP 파일 압축 알고리즘을 기반으로 만들어짐 
-
- 
-
-
-

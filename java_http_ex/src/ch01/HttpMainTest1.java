@@ -1,4 +1,4 @@
-package ch08;
+package ch01;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,12 +7,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.google.gson.Gson;
-
-public class HttpMainTest {
+public class HttpMainTest1 {
 
 	public static void main(String[] args) {
-
 		try {
 			URL url = new URL("https://jsonplaceholder.typicode.com/todos/10");
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -20,34 +17,27 @@ public class HttpMainTest {
 			connection.setRequestMethod("GET");
 			connection.setRequestProperty("Content-type", "application/json");
 			connection.connect();
+
 			int statusCode = connection.getResponseCode();
-			
+
 			BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+
 			StringBuffer sb = new StringBuffer();
-			String line = null; 
+			String line = null;
+
 			if (statusCode == 200) {
-				while( (line = reader.readLine()) != null) {
+				while ((line = reader.readLine()) != null) {
 //					sb.append(line);
 					sb.append(line + "\n");
 				}
 			}
-			System.out.println(sb.toString());
-			// 변수에 담기 
-			String str = sb.toString(); 
-			
-			System.out.println(str.substring(1));
-			
-			
-			Gson gson = new Gson();
-			Todo todo = gson.fromJson(str, Todo.class);
-//			
-//			System.out.println(todo.userId);
-//			System.out.println(todo.id);
-//			System.out.println(todo.title);
-//			System.out.println(todo.completed);
 
-			
-			
+			String str = sb.toString();
+			System.out.println(str);
+			System.out.println("-----------------");
+			System.out.println(str.substring(5, 11));
+			System.out.println(str.substring(14, 15));
+
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -57,5 +47,4 @@ public class HttpMainTest {
 		}
 
 	}
-
 }
